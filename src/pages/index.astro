@@ -1,66 +1,65 @@
 ---
-const title = "Astro"
+import BaseHead from "../components/BaseHead.astro"
+import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro"
+import { SITE_DESCRIPTION, SITE_TITLE } from "../config"
+
+const siteTitle = SITE_TITLE
+const siteDescription = SITE_DESCRIPTION
 ---
 
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <BaseHead title={siteTitle} description={siteDescription} />
   </head>
-  <body
-    class="dark:bg-black bg-white text-gray-900 dark:text-gray-50 max-w-lg mx-auto"
-  >
-    <div class="bg-gray-50 dark:bg-gray-900">
-      <header class="px-4">
-        <h1 class="text-3xl font-bold">{title}</h1>
-      </header>
+  <body>
+    <Header />
 
-      <main class="flex flex-col p-4">
-        <h2 class="text-2xl">Heading 2</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
-          ultricies leo integer malesuada nunc vel risus commodo viverra.
-          Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis
-          eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum.
-          Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis
-          egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum
-          lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-          dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi.
-          Dictumst quisque sagittis purus sit amet.
-        </p>
+    <main>
+      <h2>Heading 2</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
+        integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu
+        turpis egestas pretium. Euismod elementum nisi quis eleifend quam
+        adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus
+        sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget
+        magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius
+        sit amet mattis vulputate enim. Habitasse platea dictumst quisque
+        sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque
+        sagittis purus sit amet.
+      </p>
 
-        <h3 class="text-xl">Heading 3</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
-          ultricies leo integer malesuada nunc vel risus commodo viverra.
-          Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis
-          eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum.
-          Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis
-          egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum
-          lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-          dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi.
-          Dictumst quisque sagittis purus sit amet.
-        </p>
+      <h3>Heading 3</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
+        integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu
+        turpis egestas pretium. Euismod elementum nisi quis eleifend quam
+        adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus
+        sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget
+        magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius
+        sit amet mattis vulputate enim. Habitasse platea dictumst quisque
+        sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque
+        sagittis purus sit amet.
+      </p>
 
-        <h3 class="text-xl">Heading 3</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
-          ultricies leo integer malesuada nunc vel risus commodo viverra.
-          Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis
-          eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum.
-          Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis
-          egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum
-          lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-          dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi.
-          Dictumst quisque sagittis purus sit amet.
-        </p>
-      </main>
-    </div>
+      <h3>Heading 3</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
+        integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu
+        turpis egestas pretium. Euismod elementum nisi quis eleifend quam
+        adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus
+        sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget
+        magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius
+        sit amet mattis vulputate enim. Habitasse platea dictumst quisque
+        sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque
+        sagittis purus sit amet.
+      </p>
+    </main>
+
+    <Footer />
   </body>
 </html>
