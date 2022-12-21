@@ -1,6 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro"
 import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro"
 
 export interface Props {
   content: {
@@ -30,6 +31,7 @@ const {
   </head>
 
   <body>
+    <Header title={title} />
     <main>
       <article>
         {
@@ -44,7 +46,6 @@ const {
         }
 
         <div class="content">
-          <h1>{title}</h1>
           <slot />
         </div>
       </article>

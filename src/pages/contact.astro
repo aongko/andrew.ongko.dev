@@ -1,0 +1,72 @@
+---
+import BaseHead from "../components/BaseHead.astro"
+import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro"
+
+const title = "Contact Me"
+const description = "Contact Andrew Ongko"
+const bannerImage = "/images/placeholder-OG.png"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} image={bannerImage} />
+
+    <style>
+      main {
+        @apply flex min-h-screen flex-col gap-2;
+      }
+    </style>
+  </head>
+  <body>
+    <Header title={title} />
+
+    <main>
+      <img width={720} height={360} src={bannerImage} alt="banner image" />
+
+      <dl class="px-4">
+        <dt>Email:</dt>
+        <dd><a href="mailto:andrew@ongko.dev">andrew@ongko.dev</a></dd>
+
+        <dt>LinkedIn:</dt>
+        <dd>
+          <a href="https://www.linkedin.com/in/andrew-ongko">
+            https://www.linkedin.com/in/andrew-ongko
+          </a>
+        </dd>
+
+        <dt>Medium:</dt>
+        <dd>
+          <a href="https://medium.com/@andrew.ongko">
+            https://medium.com/@andrew.ongko
+          </a>
+        </dd>
+
+        <dt>Github:</dt>
+        <dd>
+          <a href="https://github.com/aongko" target="_blank">aongko</a>
+        </dd>
+
+        <dt>Twitter:</dt>
+        <dd>
+          <a href="https://twitter.com/andrew.ongko" target="_blank">
+            andrew.ongko
+          </a>
+        </dd>
+
+        <dt>Resume:</dt>
+        <dd>
+          <a
+            href="https://drive.google.com/file/d/1fR8XwUUo4wODWB5eOfwAxROk6F3KhCAC/view?usp=sharing"
+            target="_blank"
+          >
+            GDrive - Resume.pdf
+          </a>
+        </dd>
+      </dl>
+    </main>
+
+    <Footer />
+  </body>
+</html>

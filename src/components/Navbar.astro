@@ -1,0 +1,24 @@
+---
+import HeaderLink from "./HeaderLink.astro"
+
+export interface NavigationItem {
+  name: string
+  url: string
+  target?: astroHTML.JSX.HTMLAttributeAnchorTarget
+}
+
+const items = [
+  { name: "Home", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: "About", url: "/about" },
+  { name: "Contact", url: "/contact" },
+]
+---
+
+<nav class="flex gap-4 pb-2">
+  {
+    items.map((item) => {
+      return <HeaderLink href={item.url}>{item.name}</HeaderLink>
+    })
+  }
+</nav>

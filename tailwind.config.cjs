@@ -8,9 +8,9 @@ module.exports = {
         sm: ["1rem", { lineHeight: "1.5rem" }],
         base: ["1.125rem", { lineHeight: "1.75rem" }],
         lg: ["1.25rem", { lineHeight: "1.75rem" }],
-        xl: ["1.5rem", { lineHeight: "2rem" }],
-        "2xl": ["1.875rem", { lineHeight: "1.5" }],
-        "3xl": ["2.25rem", { lineHeight: "1.5" }],
+        xl: ["1.5rem", { lineHeight: "2.5rem" }],
+        "2xl": ["1.875rem", { lineHeight: "2" }],
+        "3xl": ["2.25rem", { lineHeight: "2" }],
       },
       colors: {
         black: "#080705",
